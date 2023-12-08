@@ -21,8 +21,11 @@ sudo systemctl daemon-reload
 ```
 sudo systemctl start minio.service
 ```
+# -----------------------------------------------------------------------------
 
 ### **Step 2/2. Check the status of service**
+# -----------------------------------------------------------------------------
+
 ```
 sudo systemctl status minio.service
 ```
