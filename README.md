@@ -4,8 +4,9 @@
 # -----------------------------------------------------------------------------
 ### **Prerequisites**
 
-This guide requires Linux, Git and Docker installed on your machine            
-### **Steps 1/2. Step Clone repository and run continer**
+This guide requires Linux, Git and Docker installed on your machine, we will run minio, but you can run also ( cassandra, rabbitmq, postgres ) pick from unit_files dir, list will be supplemented
+          
+### **Steps 1/2. Step Clone repository and run container**
 # -----------------------------------------------------------------------------
 
 ```
