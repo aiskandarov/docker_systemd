@@ -3,7 +3,7 @@
 ### To run commands below you must have docker installed on your system, so let's start:
 
 ```
-git clone https://github.com/aiskandarov/DevOps.git && cd DevOps
+git clone https://github.com/aiskandarov/docker_systemd.git && cd docker_systemd
 ```
 ```
 sudo cp unit_files/minio.service /etc/systemd/system/
