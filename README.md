@@ -31,7 +31,7 @@ also check with:
 ```
 docker ps 
 ```
-output:
+output should be:
 ```
 CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS         PORTS                                                           NAMES
 119e441e8716   minio/minio:latest   "/usr/bin/docker-ent…"   10 seconds ago   Up 9 seconds   0.0.0.0:9000-9001->9000-9001/tcp, :::9000-9001->9000-9001/tcp   docker_minio
