@@ -1,11 +1,11 @@
 ## Brief summary of guide
 
 ### In this guide, you will learn how to run Docker containers with Systemd and manage it with systemctl
-# --------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 ### **Prerequisites**
 
-This guide requires Linux, Git and Docker installed on your machine
-# --------------------------------------------------------------------------------------------------------------
+This guide requires Linux, Git and Docker installed on your machine            
+# -----------------------------------------------------------------------------
 
 ### **Steps 1/2. Step Clone repository and run continer**
 
