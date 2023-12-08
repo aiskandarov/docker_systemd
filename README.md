@@ -76,5 +76,6 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 and nothing else ( if you didn't run any containers by yourself )
 
 ### Conclusion
+# -----------------------------------------------------------------------------
 
 To conclude, since now you can run applications Docker containers with Systemd and manage it with systemctl, you can start, stop and restart services aswell.
