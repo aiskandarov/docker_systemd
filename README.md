@@ -79,4 +79,4 @@ and nothing else ( if you didn't run any containers by yourself )
 ### Conclusion
 # -----------------------------------------------------------------------------
 
-To conclude, since now you know hot to run applications Docker containers with Systemd and manage it with systemctl, you can start, stop and restart services aswell.
+To conclude, since now, you know - how to run Docker containers with Systemd, and manage it with systemctl, you can start, stop, restart and look for status of service with "systemctl" command.
