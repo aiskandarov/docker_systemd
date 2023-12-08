@@ -1,0 +1,33 @@
+[Unit]
+Description=MinIO object storage
+Requires=docker.service
+After=docker.service
+
+[Service]
+User=root
+Group=root
+Restart=always
+Environment=MINIO_ACCESS_KEY=minio-admin
+Environment=MINIO_SECRET_KEY=your_pass
+
+ExecStartPre=/usr/bin/docker rm -f docker_minio
+ExecStart=/usr/bin/docker run \
+  --name docker_minio \
+  -p 9000:9000 \
+  -p 9001:9001 \
+  -e "MINIO_ACCESS_KEY=minio-admin" \
+  -e "MINIO_SECRET_KEY=your_pass" \
+  -v /mnt/minio_data:/data \
+  minio/minio:latest server /data --console-address :9001
+ExecStop=/usr/bin/docker stop docker_minio
+ExecStop=/usr/bin/docker rm docker_minio
+
+# Healthcheck
+HealthCheckTimeoutSec=30s
+HealthCheckInterval=5m
+HealthCheckRestart=on-failure
+HealthCheckCommand=/usr/bin/docker exec minio sh -c "/usr/bin/healthcheck"
+
+[Install]
+WantedBy=multi-user.target
+

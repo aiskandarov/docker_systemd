@@ -1,0 +1,18 @@
+[Unit]
+Description=Docker Service for cassandra
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStartPre=-/usr/bin/docker stop cassandra
+ExecStartPre=-/usr/bin/docker rm cassandra
+ExecStart=/usr/bin/docker run --name cassandra \
+  -p 9042:9042 \
+  -v /var/data/cassandra:/var/lib/cassandra \
+  cassandra:5.0
+ExecStop=/usr/bin/docker stop cassandra
+
+[Install]
+WantedBy=multi-user.target
+

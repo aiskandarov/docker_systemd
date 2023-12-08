@@ -1,0 +1,20 @@
+[Unit]
+Description=Docker Service for postgresdatabase
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStartPre=-/usr/bin/docker stop postgresdatabase
+ExecStartPre=-/usr/bin/docker rm postgresdatabase
+ExecStart=/usr/bin/docker run --name postgresdatabase \
+  -e POSTGRES_USER=postgres \
+  -e POSTGRES_PASSWORD=your_pass \
+  -e POSTGRES_DB=postgres \
+  -p 5432:5432 \
+  -v /var/data/postgresdatabase:/var/lib/postgresql/data \
+  postgres:latest
+ExecStop=/usr/bin/docker stop postgresdatabase
+
+[Install]
+WantedBy=multi-user.target
