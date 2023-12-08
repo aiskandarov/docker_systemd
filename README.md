@@ -1,8 +1,8 @@
-### Brief summary of guide
+## Brief summary of guide
 
 In this guide, you will learn how to run Docker containers on Systemd and manage it with Systemctl
 
-## **Prerequisites**
+### **Prerequisites**
 
 This guide requires Linux and Docker installed on your machine
 
@@ -22,7 +22,7 @@ sudo systemctl start minio.service
 ```
 
 ### **Step 2/N. Check the status of service**
-
+```
 sudo systemctl status minio.service
 ```
 output should be:
