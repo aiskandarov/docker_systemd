@@ -1,6 +1,12 @@
-# Hot to Run applications in Docker container on systemd and manage with systemctl?
+### Brief summary of guide
 
-### To run commands below you must have docker installed on your system, so let's start:
+In this guide, you will learn how to run Docker containers on Systemd and manage it with Systemctl
+
+## **Prerequisites**
+
+This guide requires Linux and Docker installed on your machine
+
+### **Steps 1/N. Step Clone repository and run continer**
 
 ```
 git clone https://github.com/aiskandarov/docker_systemd.git && cd docker_systemd
@@ -14,9 +20,9 @@ sudo systemctl daemon-reload
 ```
 sudo systemctl start minio.service
 ```
-check with:
 
-```
+### **Step 2/N. Check the status of service**
+
 sudo systemctl status minio.service
 ```
 output should be:
@@ -29,10 +35,17 @@ Main PID: 18983 (docker)
 also check with:
 
 ```
-docker ps 
+docker ps
 ```
 output should be:
 ```
 CONTAINER ID   IMAGE                COMMAND                  CREATED          STATUS         PORTS                                                           NAMES
 119e441e8716   minio/minio:latest   "/usr/bin/docker-ent…"   10 seconds ago   Up 9 seconds   0.0.0.0:9000-9001->9000-9001/tcp, :::9000-9001->9000-9001/tcp   docker_minio
 ```
+### Conclusion
+
+To conclude,
+
+### Known issues and how-to solve them
+
+1.
