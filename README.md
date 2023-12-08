@@ -6,8 +6,8 @@
 
 This guide requires Linux, Git and Docker installed on your machine            
 # -----------------------------------------------------------------------------
-
 ### **Steps 1/2. Step Clone repository and run continer**
+# -----------------------------------------------------------------------------
 
 ```
 git clone https://github.com/aiskandarov/docker_systemd.git && cd docker_systemd
