@@ -5,7 +5,6 @@
 ### **Prerequisites**
 
 This guide requires Linux, Git and Docker installed on your machine            
-# -----------------------------------------------------------------------------
 ### **Steps 1/2. Step Clone repository and run continer**
 # -----------------------------------------------------------------------------
 
@@ -21,7 +20,6 @@ sudo systemctl daemon-reload
 ```
 sudo systemctl start minio.service
 ```
-# -----------------------------------------------------------------------------
 
 ### **Step 2/2. Check the status of service**
 # -----------------------------------------------------------------------------
@@ -47,10 +45,12 @@ CONTAINER ID   IMAGE                COMMAND                  CREATED          ST
 119e441e8716   minio/minio:latest   "/usr/bin/docker-ent…"   10 seconds ago   Up 9 seconds   0.0.0.0:9000-9001->9000-9001/tcp, :::9000-9001->9000-9001/tcp   docker_minio
 ```
 ### Known issues and how-to solve them
+# -----------------------------------------------------------------------------
 
 1. If you already have such a service running on your computer, you may encounter conflicts, so first make sure there is no *.service that matches your new service.
 
 ### How to delete service and container completely
+# -----------------------------------------------------------------------------
 
 ```
 sudo systemctl stop minio.service
