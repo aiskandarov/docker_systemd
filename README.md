@@ -1,4 +1,4 @@
-# Hot to Run application in Docker container on systemd and manage with systemctl?
+# Hot to Run applications in Docker container on systemd and manage with systemctl?
 
 ### To run commands below you must have docker installed on your system, so let's start:
 
