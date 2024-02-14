@@ -58,7 +58,7 @@ sudo systemctl stop minio.service
 sudo rm -rf /etc/systemd/system/minio.service 
 ```
 ```
-docker rm -f docker_mino
+sudo rm -rf /mnt/minio_data 
 ```
 ```
 docker rm -f docker_minio 
