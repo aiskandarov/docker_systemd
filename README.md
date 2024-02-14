@@ -58,6 +58,9 @@ sudo systemctl stop minio.service
 sudo rm -rf /etc/systemd/system/minio.service 
 ```
 ```
+sudo systemctl daemon-reload 
+```
+```
 sudo rm -rf /mnt/minio_data 
 ```
 ```
